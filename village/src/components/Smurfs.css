@@ -8,6 +8,8 @@
     margin: 15px 0 60px 15%;
     border-radius:10px;
     box-shadow: 0 0 5px #fff;
+    opacity: 0.75;
+    filter: alpha(opacity=50);
 }
 
 .title{

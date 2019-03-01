@@ -2,8 +2,8 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
-    margin: 15px 0 60px 15%;
+    width: 50%;
+    margin: 15px 0 60px 25%;
     border-radius:10px;
 }
 
