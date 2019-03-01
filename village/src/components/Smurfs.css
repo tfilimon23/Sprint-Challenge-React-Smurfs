@@ -1,0 +1,15 @@
+.smurfs{
+    background-color: #f5ff4f;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 15px 0 60px 15%;
+    border-radius:10px;
+    box-shadow: 0 0 5px #fff;
+}
+
+.title{
+    color: #171e3e;
+}

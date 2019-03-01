@@ -1,3 +1,14 @@
-.App {
-  text-align: center;
+.nav-bar{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
 }
+
+.nav-tab{
+  text-decoration: none;
+  color: #f5ff4f;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
