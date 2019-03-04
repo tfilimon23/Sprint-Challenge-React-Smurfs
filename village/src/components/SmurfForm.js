@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './SmurfForm.css'
 
 class SmurfForm extends Component {
   constructor(props) {
@@ -10,10 +11,16 @@ class SmurfForm extends Component {
     };
   }
 
-  addSmurf = event => {
-    event.preventDefault();
-    // add code to create the smurf using the api
 
+  handleInputChange = e => {
+    e.persist();
+    this.setState({ 
+     [e.target.name]: e.target.value
+      });
+    }
+
+  addSmurf = (e) => {
+    this.props.addSmurfPost(e, this.state)
     this.setState({
       name: '',
       age: '',
@@ -21,27 +28,30 @@ class SmurfForm extends Component {
     });
   }
 
-  handleInputChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+
+  // add code to create the smurf using the api
+
 
   render() {
     return (
-      <div className="SmurfForm">
-        <form onSubmit={this.addSmurf}>
+      <div className="smurf-form">
+        <form onSubmit={(e) =>this.addSmurf(e)}>
           <input
+            type="text"
             onChange={this.handleInputChange}
             placeholder="name"
             value={this.state.name}
             name="name"
           />
           <input
+            type="number"
             onChange={this.handleInputChange}
             placeholder="age"
             value={this.state.age}
             name="age"
           />
           <input
+            type="text"
             onChange={this.handleInputChange}
             placeholder="height"
             value={this.state.height}

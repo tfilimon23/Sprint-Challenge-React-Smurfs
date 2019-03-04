@@ -1,0 +1,11 @@
+.smurf{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #171e3e;
+    width: 30%;
+    margin-left: 33%
+}
+
+h3, strong, p{
+    color: #171e3e;
+}
